@@ -1,47 +1,41 @@
 {
-  "name": "accepts",
-  "description": "Higher-level content negotiation",
-  "version": "1.3.8",
-  "contributors": [
-    "Douglas Christopher Wilson <doug@somethingdoug.com>",
-    "Jonathan Ong <me@jongleberry.com> (http://jongleberry.com)"
-  ],
-  "license": "MIT",
-  "repository": "jshttp/accepts",
+  "name": "Question2",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "mime-types": "~2.1.34",
-    "negotiator": "0.6.3"
-  },
-  "devDependencies": {
-    "deep-equal": "1.0.1",
-    "eslint": "7.32.0",
-    "eslint-config-standard": "14.1.1",
-    "eslint-plugin-import": "2.25.4",
-    "eslint-plugin-markdown": "2.2.1",
-    "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-promise": "4.3.1",
-    "eslint-plugin-standard": "4.1.0",
-    "mocha": "9.2.0",
-    "nyc": "15.1.0"
-  },
-  "files": [
-    "LICENSE",
-    "HISTORY.md",
-    "index.js"
-  ],
-  "engines": {
-    "node": ">= 0.6"
+    "@ant-design/icons": "^4.7.0",
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "antd": "^4.19.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.2",
+    "react-scripts": "5.0.0",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "lint": "eslint .",
-    "test": "mocha --reporter spec --check-leaks --bail test/",
-    "test-ci": "nyc --reporter=lcov --reporter=text npm test",
-    "test-cov": "nyc --reporter=html --reporter=text npm test"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "keywords": [
-    "content",
-    "negotiation",
-    "accept",
-    "accepts"
-  ]
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

@@ -1,0 +1,13 @@
+import React from "react";
+
+const DetailsThumb = ({ images, tab, myRef }) => {
+  return (
+    <div className="product__thumb" ref={myRef}>
+      {images.map((img, index) => (
+        <img src={img} alt="" key={index} onClick={() => tab(index)} />
+      ))}
+    </div>
+  );
+};
+
+export default DetailsThumb;
